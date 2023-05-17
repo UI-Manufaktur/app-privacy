@@ -1,10 +1,10 @@
-module apps.myname.views;
+module apps.privacy.views;
 
 public {
-  import apps.myname.views.components;
-  import apps.myname.views.forms;
-  import apps.myname.views.pages;
+  import apps.privacy.views.components;
+  import apps.privacy.views.forms;
+  import apps.privacy.views.pages;
 }
 
-public import apps.myname.views.error;
-public import apps.myname.views.index;
+public import apps.privacy.views.error;
+public import apps.privacy.views.index;

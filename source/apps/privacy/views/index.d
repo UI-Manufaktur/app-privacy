@@ -1,18 +1,18 @@
-module apps.myname.views.index;
+module apps.privacy.views.index;
 
-import apps.myname;
+import apps.privacy;
 @safe:
 
-class DMYNAMEIndexView : DView {
-  mixin(ViewThis!("MYNAMEIndexView"));
+class DPRIVACYIndexView : DView {
+  mixin(ViewThis!("PRIVACYIndexView"));
 
   override DH5Obj[] toH5(STRINGAA options = null) {
-    debugMethodCall(moduleName!DMYNAMEIndexView~":DMYNAMEIndexView("~this.name~")::toH5");
+    debugMethodCall(moduleName!DPRIVACYIndexView~":DPRIVACYIndexView("~this.name~")::toH5");
     super.toH5(options);
 
     return [
-      H5Div("APP myname -> Error")
+      H5Div("APP privacy -> Error")
     ].toH5;
   }
 }
-mixin(ViewCalls!("MYNAMEIndexView"));
+mixin(ViewCalls!("PRIVACYIndexView"));

@@ -1,7 +1,7 @@
-module apps.myname.views.forms;
+module apps.privacy.views.forms;
 
 public {
-  import apps.myname.views.forms.headers;
-  import apps.myname.views.forms.bodies;
-  import apps.myname.views.forms.footers;
+  import apps.privacy.views.forms.headers;
+  import apps.privacy.views.forms.bodies;
+  import apps.privacy.views.forms.footers;
 }

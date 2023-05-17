@@ -1,1 +1,1 @@
-module apps.myname.views.components;
+module apps.privacy.views.components;
