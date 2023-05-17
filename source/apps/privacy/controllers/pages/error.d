@@ -1,16 +1,16 @@
-module apps.myname.controllers.pages.error;
+module apps.privacy.controllers.pages.error;
 
-import apps.myname;
+import apps.privacy;
 @safe:
 
-class DMYNAMEErrorPageController : DAPPPageController {
-  mixin(ControllerThis!("MYNAMEErrorPageController"));
+class DPRIVACYErrorPageController : DAPPPageController {
+  mixin(ControllerThis!("PRIVACYErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(MYNAMEErrorView(this));
+      .view(PRIVACYErrorView(this));
   }
 }
-mixin(ControllerCalls!("MYNAMEErrorPageController"));
+mixin(ControllerCalls!("PRIVACYErrorPageController"));

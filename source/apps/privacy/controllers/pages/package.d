@@ -1,6 +1,6 @@
-module apps.myname.controllers.pages;
+module apps.privacy.controllers.pages;
 
 public {
-  import apps.myname.controllers.pages.error;
-  import apps.myname.controllers.pages.index;
+  import apps.privacy.controllers.pages.error;
+  import apps.privacy.controllers.pages.index;
 }

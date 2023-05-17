@@ -20,6 +20,7 @@ public import langs.javascript;
 public {
   import apps.privacy.controllers;
   import apps.privacy.helpers;
+  import apps.privacy.routers;
   import apps.privacy.tests;
   import apps.privacy.views;
 }
@@ -29,6 +30,6 @@ static this() {
   privacyApp = App
     .name("privacyApp")
     .rootPath("/apps/privacy")
-    .addRoute(Route("", HTTPMethod.GET, PRVIndexPageController));
+    .addRoute(Route("", HTTPMethod.GET, PRVIndexPageController))
     .addRoute(Route("/", HTTPMethod.GET, PRVIndexPageController));
 }
