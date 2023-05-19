@@ -1,6 +1,6 @@
 {
-	"name": "app-myname",
-	"description": "App myname",
+	"name": "app-privacy",
+	"description": "App privacy",
 	"authors": [
 		"Sicherheitsschmiede",
 		"Ozan Nurettin Süel"
@@ -16,7 +16,7 @@
 			"name": "test",
 			"targetType": "library",
 			"versions": [
-				"test_uim_myname"
+				"test_uim_privacy"
 			]
 		}
 	],

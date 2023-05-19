@@ -3,14 +3,14 @@ module apps.privacy.controllers.pages.index;
 import apps.privacy;
 @safe:
 
-class DPRIVACYIndexPageController : DAPPPageController {
-  mixin(ControllerThis!("PRIVACYIndexPageController"));
+class DPRVIndexPageController : DAPPPageController {
+  mixin(ControllerThis!("PRVIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(PRIVACYIndexView(this));
+      .view(PRVIndexView(this));
   }
 }
-mixin(ControllerCalls!("PRIVACYIndexPageController"));
+mixin(ControllerCalls!("PRVIndexPageController"));

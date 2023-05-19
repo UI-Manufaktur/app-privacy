@@ -28,7 +28,7 @@ public {
 DApp privacyApp;
 static this() {
   privacyApp = App
-    .name("privacyApp")
+    .name("prvApp")
     .rootPath("/apps/privacy")
     .addRoute(Route("", HTTPMethod.GET, PRVIndexPageController))
     .addRoute(Route("/", HTTPMethod.GET, PRVIndexPageController));

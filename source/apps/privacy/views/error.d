@@ -3,15 +3,15 @@ module apps.privacy.views.error;
 import apps.privacy;
 @safe:
 
-class DPRIVACYErrorView : DView {
-  mixin(ViewThis!("PRIVACYErrorView"));
+class DPRVErrorView : DView {
+  mixin(ViewThis!("PRVErrorView"));
 
   override void beforeH5(STRINGAA options = null) {
     super.beforeH5(options);
   }
 
   override DH5Obj[] toH5(STRINGAA options = null) {
-    debugMethodCall(moduleName!DPRIVACYErrorView~":DPRIVACYErrorView("~this.name~")::toH5");
+    debugMethodCall(moduleName!DPRVErrorView~":DPRVErrorView("~this.name~")::toH5");
     super.toH5(options);
 
     return [
@@ -19,4 +19,4 @@ class DPRIVACYErrorView : DView {
     ].toH5;
   }
 }
-mixin(ViewCalls!("PRIVACYErrorView"));
+mixin(ViewCalls!("PRVErrorView"));

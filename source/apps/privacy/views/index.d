@@ -3,16 +3,16 @@ module apps.privacy.views.index;
 import apps.privacy;
 @safe:
 
-class DPRIVACYIndexView : DView {
-  mixin(ViewThis!("PRIVACYIndexView"));
+class DPRVIndexView : DView {
+  mixin(ViewThis!("PRVIndexView"));
 
   override DH5Obj[] toH5(STRINGAA options = null) {
-    debugMethodCall(moduleName!DPRIVACYIndexView~":DPRIVACYIndexView("~this.name~")::toH5");
+    debugMethodCall(moduleName!DPRVIndexView~":DPRVIndexView("~this.name~")::toH5");
     super.toH5(options);
 
     return [
-      H5Div("APP privacy -> Error")
+      H5Div("APP Privacy -> Error")
     ].toH5;
   }
 }
-mixin(ViewCalls!("PRIVACYIndexView"));
+mixin(ViewCalls!("PRVIndexView"));
