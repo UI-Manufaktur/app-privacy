@@ -26,7 +26,7 @@ public {
 }
 
 static this() {
-  AppRegistry.register(  
+  AppRegistry.register("apps.privacy",  
     App
     .name("privacyApp")
     .rootPath("/apps/privacy")
