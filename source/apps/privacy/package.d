@@ -25,11 +25,11 @@ public {
   import apps.privacy.views;
 }
 
-DApp privacyApp;
 static this() {
-  privacyApp = App
-    .name("prvApp")
+  AppRegistry.register(  
+    App
+    .name("privacyApp")
     .rootPath("/apps/privacy")
     .addRoute(Route("", HTTPMethod.GET, PRVIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, PRVIndexPageController));
+    .addRoute(Route("/", HTTPMethod.GET, PRVIndexPageController)));
 }
