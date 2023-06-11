@@ -1,1 +1,1 @@
-# Documentation 📃 of app-privacy
+# Documentation 📃 for app-privacy
