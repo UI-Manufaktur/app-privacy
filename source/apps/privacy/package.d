@@ -30,6 +30,7 @@ static this() {
     App
     .name("privacyApp")
     .rootPath("/apps/privacy")
+                  .importTranslations()     
     .addRoute(Route("", HTTPMethod.GET, PRVIndexPageController))
     .addRoute(Route("/", HTTPMethod.GET, PRVIndexPageController)));
 }
