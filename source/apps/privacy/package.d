@@ -27,10 +27,11 @@ public {
 
 static this() {
   AppRegistry.register("apps.privacy",  
-    App
-    .name("privacyApp")
-    .rootPath("/apps/privacy")
-                  .importTranslations()     
-    .addRoute(Route("", HTTPMethod.GET, PRVIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, PRVIndexPageController)));
+    App("privacyApp", "/apps/privacy")
+      .importTranslations()
+      .addRoutes(
+        Route("", HTTPMethod.GET, IndexPageController),
+        Route("/", HTTPMethod.GET, IndexPageController)
+      )
+    );
 }
