@@ -27,7 +27,7 @@ public {
 
 static this() {
   AppRegistry.register("apps.privacy",  
-    App("privacyApp", "/apps/privacy")
+    App("privacyApp", "apps/privacy")
       .importTranslations()
       .addRoutes(
         Route("", HTTPMethod.GET, IndexPageController),
