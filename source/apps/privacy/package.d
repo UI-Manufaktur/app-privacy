@@ -2,8 +2,10 @@ module apps.privacy;
 
 mixin(ImportPhobos!());
 
-// Dub
-public import vibe.d;
+// External
+public {
+  import vibe.d;
+}
 
 // UIM
 public import uim.core;
@@ -26,12 +28,18 @@ public {
 }
 
 static this() {
-  AppRegistry.register("apps.privacy",  
-    App("privacyApp", "apps/privacy")
-      .importTranslations()
-      .addRoutes(
-        Route("", HTTPMethod.GET, IndexPageController),
-        Route("/", HTTPMethod.GET, IndexPageController)
-      )
+  auto myApp = App("privacyApp", "apps/privacy");
+
+  with (myApp) {
+    importTranslations;
+    addControllers([
+      "privacy.index": IndexPageController 
+    ]);
+    addRoutes(
+      Route("", HTTPMethod.GET, controller("privacy.index")),
+      Route("/", HTTPMethod.GET, controller("privacy.index"))
     );
+  }
+
+  AppRegistry.register("apps.privacy",  myApp);
 }
